@@ -1,0 +1,127 @@
+name: last_hope
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.4
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Core
+  flutter_bloc: ^9.0.0
+  provider: ^6.1.5+1
+  get_it: ^9.2.0
+  equatable: ^2.0.7
+  shared_preferences: ^2.3.5
+
+  # Hardware / OS
+  geolocator: ^14.0.2
+  sensors_plus: ^7.0.0
+  permission_handler: ^12.0.1
+  flutter_background_service: ^5.0.10
+  flutter_local_notifications: ^19.5.0
+  wakelock_plus: ^1.2.9
+  vibration: ^3.1.5
+  android_intent_plus: ^6.0.0
+  url_launcher: ^6.3.1
+  
+  # Connectivity
+  web_socket_channel: ^3.0.1
+  nearby_connections: ^4.3.0
+  
+  # Backend (Supabase)
+  supabase_flutter: ^2.8.4
+  flutter_dotenv: ^5.2.1
+  
+  # UI
+  cupertino_icons: ^1.0.8
+  lucide_icons: ^0.257.0
+  google_fonts: ^7.0.0
+  flutter_map: ^8.2.2
+  latlong2: ^0.9.1
+  http: ^1.6.0
+  flutter_contacts: ^1.1.9+2
+  flutter_phone_direct_caller: ^2.2.1
+  image_picker: ^1.2.1
+  path_provider: ^2.1.5
+  torch_light: ^1.1.0
+  flutter_ringtone_player: ^4.0.0+4
+  volume_controller: ^3.4.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.3
+  flutter_native_splash: ^2.4.4
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  assets:
+    - assets/branding/
+    - .env
+
+
+# ──────────────────────────────────────────
+# Flutter Launcher Icons Configuration
+# ──────────────────────────────────────────
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/branding/icon.png"
+  adaptive_icon_foreground: "assets/branding/icon.png"
+  adaptive_icon_background: "#FF0000"
+  min_sdk_android: 21
+  remove_alpha_ios: true
+
+# ──────────────────────────────────────────
+# Flutter Native Splash Configuration
+# ──────────────────────────────────────────
+flutter_native_splash:
+  color: "#000000"
+  image: "assets/branding/splash.png"
+  color_dark: "#000000"
+  image_dark: "assets/branding/splash.png"
+
+  android_gravity: center
+  ios_content_mode: center
+
+  # Android 12+ splash screen support
+  android_12:
+    color: "#000000"
+    icon_background_color: "#000000"
+    image: "assets/branding/splash.png"
