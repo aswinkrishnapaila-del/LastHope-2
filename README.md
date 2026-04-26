@@ -122,3 +122,7 @@ You should be careful not to upload sensitive secrets or unnecessarily large cac
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+   
+<h3>Contributors</h3>
+<p>Edited by Rushi - Initial contribution</p>
+<p>Rushi - Added README contribution</p>
